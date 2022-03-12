@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yuhazel_mp1/static/css/main.457b7a7a.css",
+    "main.js": "/yuhazel_mp1/static/js/main.fa7ce394.js",
+    "static/js/787.ac711050.chunk.js": "/yuhazel_mp1/static/js/787.ac711050.chunk.js",
+    "static/media/me.jpg": "/yuhazel_mp1/static/media/me.70c1967dcc7f4845098e.jpg",
+    "index.html": "/yuhazel_mp1/index.html",
+    "main.457b7a7a.css.map": "/yuhazel_mp1/static/css/main.457b7a7a.css.map",
+    "main.fa7ce394.js.map": "/yuhazel_mp1/static/js/main.fa7ce394.js.map",
+    "787.ac711050.chunk.js.map": "/yuhazel_mp1/static/js/787.ac711050.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.457b7a7a.css",
+    "static/js/main.fa7ce394.js"
+  ]
+}
