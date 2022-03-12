@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  min-height: 100%;
+  background: #eee;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #222;
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container {
+  max-width: 800px;
+  background: #fff;
+  margin: 0px auto 0px;
+  box-shadow: 1px 1px 2px #dad7d7;
+  border-radius: 3px;
+  padding: 60px;
+  margin-top: 50px;
+  padding-bottom: 120px;
+}
+.links {
+  padding-left: 130px;
+  padding-top: 15px;
+  display: inline-block;
+  text-align: left;
+  color: #4b4646;
+  font-size: 15px;
+  font-weight: 600;
+}
+h1 {
+  padding-left: 110px;
+  padding-top: 20px;
+  display: inline-block;
+  text-align: right;
+  color: #333333;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.profile {
+  border: 2px solid #1b1b1b;
+  border-radius: 100px;
+  width: 170px;
+  height: 170px;
+  margin-bottom: 30px;
+  margin-right: 1px;
+  float: left;
+}
+
+h2,
+h3,
+h4 {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+
+  border-bottom: 3px solid #e32636;
+  display: inline-block;
+  color: #333333;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+ul {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+
+  list-style: none;
+}
+
+.row {
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+header {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+header h1 {
+  font-size: 30pt;
+}
+
+header ul {
+}
+
+header ul li {
+  height: 25px;
+}
+
+header ul li i {
+  color: #ff3659;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+article {
+  margin-top: 10px;
+}
+
+article h2 {
+  font-size: 16pt;
+}
+
+article .header {
+  color: #ff3659;
+  font-weight: 600;
+}
+
+article .header span {
+  font-size: 10pt;
+  font-style: italic;
+}
+
+article .right {
+  float: right;
+  width: 250px;
+  bottom: 25px;
+  position: relative;
+  font-weight: 600;
+}
+
+article .description {
+  font-style: italic;
+  font-size: 9pt;
+}
+
+article .exp-list .fa {
+  color: #ff3659;
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+article ul li {
+  min-height: 25px;
+  max-width: 80%;
+}
+
+article .reference {
+  width: 40%;
+  display: inline-block;
+}
+
+article .reference ul li {
+  max-width: 100%;
+}
+
+article .spacer {
+  height: 15px;
+}
+
+article .tech ul li {
+  max-width: 100% !important;
+}
+
+article .tech span {
+  font-weight: 600;
+  color: #ff3659;
+}
+.two-column {
+  float: none;
+  width: auto;
+  overflow: hidden;
+}
+
+.side-a {
+  float: left;
+  position: relative;
+  width: 220px;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  margin-right: 30px;
+}
+
+.main-menu ul {
+  border-radius: 18px;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  margin-top: 10px;
+  padding-left: 10px;
+  list-style-type: circle;
+}
+
+.main-menu li {
+  margin-bottom: 10px;
+}
+
+.main-menu li:last-child {
+  margin-bottom: 0;
+}
+
+/* media queries */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    max-width: 767px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .side-a {
+    float: none;
+    position: static;
+    width: 100%;
+    margin-right: 0;
   }
 }
